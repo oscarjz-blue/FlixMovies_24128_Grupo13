@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>📺 FlixMovies</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Bootstrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="">
+    <div class="container-fluid bg-dark text-light">
+        <nav class="navbar navbar-expand-lg bg-body fixed-top" data-bs-theme="dark"> <!--navbar-->
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="./index.html"><i class="bi bi-film"></i> FlixMovies
+                </a>
+                <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="animation_main.html">Animación</a></li>
+                                <li><a class="dropdown-item" href="superhero_main.html">Superhéroes</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./404.html">Drama</a></li>
+                                <li><a class="dropdown-item" href="./404.html">Comedia</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" style="min-width: 25vw;" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar película o serie"
+                            aria-label="Buscar">
+                        <button class="btn btn-outline-warning me-2" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <br>
+                    <form class="d-flex justify-content-end" role="login">
+                        <a class="btn btn-outline-danger me-2" type="submit" href="./login.html">Iniciar
+                            Sesión</a>
+                        <a class="btn btn-danger me-2" type="submit" href="./suscripcion.html">Suscribirse</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <header class="row header d-flex align-items-end"> <!-- header -->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h1 class="display-2">Avengers: Endgame</h1>
+                    <a class="btn btn-danger btn-lg" href="./404.html" role="button"><i
+                            class="bi bi-play-circle-fill"></i>
+                        Reproducir</a>
+                    <a class="btn btn-outline-secondary btn-lg d-none d-md-inline" role="button"
+                        href="./pelicula.html"><i class="bi bi-plus-circle-fill"></i>
+                        Ver más</a>
+                    <a class="btn btn-outline-secondary btn-lg d-inline d-md-none" href="./pelicula.html"
+                        role="button"><i class="bi bi-plus-circle-fill"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="display-6">En el final épico de la Saga del Infinito, los Avengers se enfrentan a Thanos.
+                        Al
+                        final era todo un sueño de la hija de Tony Stark.</p>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="mt-3">
+            <div class="row movie-carousel p-2"> <!-- movie carousel 1 -->
+                <h2>Lo más visto</h2>
+                <div id="carousel_1" class="carousel slide text-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6a4d2bef-e91e-4bf5-837b-0b1cf8d619bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/2ccd18bc-7c03-4696-a740-ebda3c70b228-shazam-1651215369-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/ea4edc9d-2abf-4f69-adc9-5444b0f996a5-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/8ad6d91e-119d-4fd4-a25f-de4e926eb54f-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/a0cad2d3-ecf3-4d4a-b253-ac72cd013f6a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/f6262b9b-4f82-4d9c-bc56-cb1b1e62a08a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/63b72e9c-cacf-40a9-85d0-f35b826400be-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/7fe17a79-e4fb-4c88-9c90-012cb37f5ec6-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/4709c25c-f4eb-4442-8568-89f7a6937ed1-creed-la-leyenda-de-rocky-1611322259-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/188f531d-999a-4512-96d9-ac4bd0f20297-guardianes-de-la-galaxia-vol-2-1611322589-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/495d78b6-b603-4f99-8dc2-7facad4f10bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/a12b7d05-4c15-4fa3-8041-fba78f6d0b9e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/4dfc2f50-db14-484b-b11b-bfecc917b461-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/72b9ebe5-7157-4446-8bc9-e8e01de8c21e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6f553e2b-6dc8-4dd9-9956-636a8f55a533-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/f41de143-3f63-4238-9e5f-f8a073995efc-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/45fbda58-2083-46a7-b0db-880a06e8eb67-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/59e439b3-b887-4b7e-b19c-553e6b6a12d9-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row movie-carousel p-2"> <!-- movie carousel 2 -->
+                <h2>Lo menos visto</h2>
+                <div id="carousel_2" class="carousel slide text-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6a4d2bef-e91e-4bf5-837b-0b1cf8d619bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/2ccd18bc-7c03-4696-a740-ebda3c70b228-shazam-1651215369-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/ea4edc9d-2abf-4f69-adc9-5444b0f996a5-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/8ad6d91e-119d-4fd4-a25f-de4e926eb54f-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/a0cad2d3-ecf3-4d4a-b253-ac72cd013f6a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/f6262b9b-4f82-4d9c-bc56-cb1b1e62a08a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/63b72e9c-cacf-40a9-85d0-f35b826400be-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/7fe17a79-e4fb-4c88-9c90-012cb37f5ec6-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/4709c25c-f4eb-4442-8568-89f7a6937ed1-creed-la-leyenda-de-rocky-1611322259-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/188f531d-999a-4512-96d9-ac4bd0f20297-guardianes-de-la-galaxia-vol-2-1611322589-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/495d78b6-b603-4f99-8dc2-7facad4f10bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/a12b7d05-4c15-4fa3-8041-fba78f6d0b9e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/4dfc2f50-db14-484b-b11b-bfecc917b461-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/72b9ebe5-7157-4446-8bc9-e8e01de8c21e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6f553e2b-6dc8-4dd9-9956-636a8f55a533-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/f41de143-3f63-4238-9e5f-f8a073995efc-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/45fbda58-2083-46a7-b0db-880a06e8eb67-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/59e439b3-b887-4b7e-b19c-553e6b6a12d9-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row category-carousel p-2"> <!-- category carousel 3 -->
+                <h2>Explorá por categorías</h2>
+                <div id="carousel_3" class="carousel slide text-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-6 col-sm-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/01.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title"><a href="./superhero_main.html"
+                                                    class="link-light">Superhéroes</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/05.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title">Ciencia Ficción</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/06.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title">Drama</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-6 col-sm-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/04.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title">Tarantino</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/02.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title"><a href="./animation_main.html"
+                                                    class="link-light">Animación</a></h5>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/categories/03.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                                            <h5 class="card-title">Crimen</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row actor-carousel p-2"> <!-- actors carousel 4 -->
+                <h2>Mi villano favorito</h2>
+                <div id="carousel_4" class="carousel slide text-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/02.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/00.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="./serie.html" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/03.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/01.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/04.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="./img/villanos/05.jpg" class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-three-dots"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row movie-carousel p-2"> <!-- movie carousel 5 -->
+                <h2>Añadidos recientemente</h2>
+                <div id="carousel_5" class="carousel slide text-center">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6a4d2bef-e91e-4bf5-837b-0b1cf8d619bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/2ccd18bc-7c03-4696-a740-ebda3c70b228-shazam-1651215369-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/ea4edc9d-2abf-4f69-adc9-5444b0f996a5-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/8ad6d91e-119d-4fd4-a25f-de4e926eb54f-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/a0cad2d3-ecf3-4d4a-b253-ac72cd013f6a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/f6262b9b-4f82-4d9c-bc56-cb1b1e62a08a-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/63b72e9c-cacf-40a9-85d0-f35b826400be-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/7fe17a79-e4fb-4c88-9c90-012cb37f5ec6-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/4709c25c-f4eb-4442-8568-89f7a6937ed1-creed-la-leyenda-de-rocky-1611322259-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/188f531d-999a-4512-96d9-ac4bd0f20297-guardianes-de-la-galaxia-vol-2-1611322589-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/495d78b6-b603-4f99-8dc2-7facad4f10bf-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/a12b7d05-4c15-4fa3-8041-fba78f6d0b9e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-2.rakuten.tv/storage/global-movie/translation/artwork/4dfc2f50-db14-484b-b11b-bfecc917b461-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/72b9ebe5-7157-4446-8bc9-e8e01de8c21e-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-0.rakuten.tv/storage/global-movie/translation/artwork/6f553e2b-6dc8-4dd9-9956-636a8f55a533-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/f41de143-3f63-4238-9e5f-f8a073995efc-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-sm-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-3.rakuten.tv/storage/global-movie/translation/artwork/45fbda58-2083-46a7-b0db-880a06e8eb67-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-2 d-none d-md-block">
+                                    <div class="card text-bg-dark">
+                                        <img src="https://images-1.rakuten.tv/storage/global-movie/translation/artwork/59e439b3-b887-4b7e-b19c-553e6b6a12d9-width317-quality60.jpeg"
+                                            class="card-img" alt="">
+                                        <div class="card-img-overlay d-flex align-items-end justify-content-end">
+                                            <a href="#" class="btn btn-warning text-center"><i
+                                                    class="bi bi-plus-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_5"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_5"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-light pt-5 pb-4"> <!-- footer -->
+            <div class="container-fluid text-center text-md-start">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-danger"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor"
+                                class="bi bi-film" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z" />
+                            </svg> FlixMovies</h5>
+                        <hr class="mb-4">
+                        <p>
+                            La plataforma de streaming con el mejor contenido actualizado y personalizado para ti.</p>
+                        <p>¡Disfruta de películas y series exclusivas!</p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Inicio</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <a href="#" class="text-light">Cuenta</a>
+                        </p>
+
+                        <p>
+                            <a href="#" class="text-light">Peliculas</a>
+                        </p>
+
+                        <p>
+                            <a href="#" class="text-light">Series</a>
+                        </p>
+
+                        <p>
+                            <a href="#" class="text-light">Descargas</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Conocenos</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <a href="./nosotros.html" class="text-light">Acerca de nosotros</a>
+                        </p>
+
+                        <p>
+                            <a href="./contacto.html" class="text-light">Contactanos</a>
+                        </p>
+                        <p>
+                            <a href="./404.html" class="text-light">Sugerencias</a>
+                        </p>
+                        <p>
+                            <a href="./404.html" class="text-light">Politica de privacidad</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-danger">contacto</h5>
+                        <hr class="mb-4">
+                        <p><i class="bi bi-house-door-fill"></i> FlixMovies</p>
+                        <p><i class="bi bi-envelope-fill"></i> FlixMovies@gmail.com</p>
+                        <p><i class="bi bi-telephone-fill"></i> 11-2222-3333</p>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <div class="text-center mb-2">
+                        <p>
+                            Copyright&#169; Todos los derechos reservados a
+                            <a href="#">
+                                <b><strong class="text-danger">FlixMovies</strong></b>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-12 pt-4">
+                        <h6>O iniciar sesión con:</h6>
+                        <button type="submit" class="btn btn-danger"><i class="bi bi-google"></i></button>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-facebook"></i></button>
+                        <button type="submit" class="btn btn-info text-light"><i class="bi bi-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
