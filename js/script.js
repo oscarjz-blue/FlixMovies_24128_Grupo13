@@ -29,7 +29,9 @@ function validarSuscripcion(){
 
 // Expresion regular para validar el nombre y apellido
 if (!/^[A-Za-z ]{1,20}$/.test(nombreCompleto)) {
-    alert('El nombre no debe contener números y ademas no debe superar los 20 caracteres de longitud.');
+    alert(
+      "El nombre no debe contener números y ademas no debe superar los 20 caracteres de longitud."
+    );
     return;
 }
 
@@ -38,7 +40,6 @@ var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // Verificar si el correo electrónico es válido
 if (emailRegex.test(correo)) {
-
   alert("El correo electrónico válido: " + correo);
 } else {
   
@@ -52,14 +53,11 @@ if (correo !== correoVerificado) {
     return;
 }
 
-
 // Expresion regular para validar la contaseña
 if (!/(?=.*\d)(?=.*[A-Z])/.test(password)) {
     alert('La contraseña debe contener al menos un número y una letra mayúscula.');
     return;
-}
-
-
+  }
 
 // Si pasa todas las validaciones, se puede enviar el formulario o hacer otra acción
 alert('Formulario válido. ¡Gracias por suscribirte!');
